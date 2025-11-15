@@ -1,18 +1,436 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "titulo": "Nausicaä do Vale do Vento",
+      "conteudo": "Em Nausicaä do Vale do Vento, a jovem princesa Nausicaä vive em um futuro devastado por guerras e por uma floresta tóxica habitada por criaturas gigantes. Quando reinos rivais ameaçam destruir o equilíbrio do mundo, ela luta para impedir uma nova tragédia e provar que humanos e natureza podem coexistir em harmonia.",
+      "categoria": "Fantasia, Ficção Científica, Aventura.",
+      "autor": "Hayao Miyazaki",
+      "data": "11-03-1984",
+      "imagem": "./assets/img/nausicaa.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/nausicaa_sec1.jpg",
+        "./assets/img/nausicaa_sec2.jpg",
+        "./assets/img/nausicaa_sec3.jpg",
+        "./assets/img/nausicaa_sec4.jpg"
+      ]
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "titulo": "O Castelo no Céu",
+      "conteudo": "Sheeta e Pazu embarcam em uma aventura para encontrar a cidade voadora Laputa. Enquanto fogem de piratas e agentes do governo, eles lutam para proteger o poder do castelo flutuante e evitar que ele caia em mãos erradas.",
+      "categoria": "Aventura, Fantasia",
+      "autor": "Hayao Miyazaki",
+      "data": "02-08-1986",
+      "imagem": "./assets/img/ocastelonoceu.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/ocastelonoceu_sec1.jpg",
+        "./assets/img/ocastelonoceu_sec2.jpg",
+        "./assets/img/ocastelonoceu_sec3.jpg",
+        "./assets/img/ocastelonoceu_sec4.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Meu Amigo Totoro",
+      "conteudo": "Satsuki e Mei, duas jovens irmãs, se mudam para uma casa antiga no campo com seu pai para ficar mais perto de sua mãe doente. Elas descobrem que a floresta próxima é habitada por criaturas mágicas, incluindo o gentil e enorme Totoro. As irmãs embarcam em aventuras fantásticas com Totoro e seus amigos espíritos da floresta.",
+      "categoria": "Animação, Fantasia, Família",
+      "autor": "Hayao Miyazaki",
+      "data": "16-04-1988",
+      "imagem": "./assets/img/meuamigototoro.jpg",
+      "imagemCarrossel": "./assets/img/meuamigototoro_carrossel.jpg",
+      "destaque": true,
+      "descricaoCurta": "Uma história mágica e leve sobre amizade, infância e a conexão com a natureza.",
+      "fotosSecundarias": [
+        "./assets/img/totoro_sec1.jpg",
+        "./assets/img/totoro_sec2.jpg",
+        "./assets/img/totoro_sec3.jpg",
+        "./assets/img/totoro_sec4.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Túmulo dos Vagalumes",
+      "conteudo": "Durante os últimos meses da Segunda Guerra Mundial, Seita e Setsuko, dois irmãos órfãos, lutam para sobreviver em meio à devastação do Japão. Eles enfrentam a fome, a doença e a indiferença dos adultos, buscando refúgio em um abrigo abandonado e encontrando consolo na beleza efêmera dos vagalumes.",
+      "categoria": "Drama, Guerra",
+      "autor": "Isao Takahata",
+      "data": "16-04-1988",
+      "imagem": "./assets/img/tumulodosvagalumes.jpg",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/vagalumes_sec1.jpg",
+        "./assets/img/vagalumes_sec2.jpg",
+        "./assets/img/vagalumes_sec3.jpg",
+        "./assets/img/vagalumes_sec4.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "O Serviço de Entregas da Kiki",
+      "conteudo": "Uma jovem bruxa de 13 anos se muda para uma nova cidade e usa sua habilidade de voar para iniciar um serviço de entregas, aprendendo sobre independência e amadurecimento.",
+      "categoria": "Fantasia, Aventura",
+      "autor": "Hayao Miyazaki",
+      "data": "29-07-1989",
+      "imagem": "./assets/img/osservicosdeentregadakiki.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/kiki_sec1.jpg",
+        "./assets/img/kiki_sec2.jpg",
+        "./assets/img/kiki_sec3.jpg",
+        "./assets/img/kiki_sec4.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Memórias de Ontem",
+      "conteudo": "Uma mulher de 27 anos viaja para o campo e começa a relembrar sua infância nos anos 60, refletindo sobre suas escolhas de vida e seu futuro.",
+      "categoria": "Drama, Romance",
+      "autor": "Isao Takahata",
+      "data": "20-07-1991",
+      "imagem": "./assets/img/memoriasdeontem.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/memorias_sec1.jpg",
+        "./assets/img/memorias_sec2.jpg",
+        "./assets/img/memorias_sec3.jpg",
+        "./assets/img/memorias_sec4.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Porco Rosso: O Último Herói Romântico",
+      "conteudo": "Um piloto de caça italiano da Primeira Guerra Mundial, amaldiçoado a ter uma cabeça de porco, trabalha como caçador de recompensas no Mar Adriático.",
+      "categoria": "Aventura, Comédia",
+      "autor": "Hayao Miyazaki",
+      "data": "18-07-1992",
+      "imagem": "./assets/img/porcorosso.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/porcorosso_sec1.jpg",
+        "./assets/img/porcorosso_sec2.jpg",
+        "./assets/img/porcorosso_sec3.jpg",
+        "./assets/img/porcorosso_sec4.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Eu Posso Ouvir o Oceano",
+      "conteudo": "Um triângulo amoroso se desenvolve entre dois melhores amigos e uma nova estudante transferida de Tóquio, explorando temas de amizade e distância.",
+      "categoria": "Drama, Romance",
+      "autor": "Tomomi Mochizuki",
+      "data": "05-05-1993",
+      "imagem": "./assets/img/eupossoouvirooceano.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/oceano_sec1.jpg",
+        "./assets/img/oceano_sec2.jpg",
+        "./assets/img/oceano_sec3.jpg",
+        "./assets/img/oceano_sec4.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "PomPoko: A Grande Batalha dos Guaxinins",
+      "conteudo": "Um grupo de guaxinins mágicos (tanuki) usa suas habilidades de transformação para tentar impedir que os humanos destruam sua floresta para construir novos subúrbios.",
+      "categoria": "Fantasia, Comédia",
+      "autor": "Isao Takahata",
+      "data": "16-07-1994",
+      "imagem": "./assets/img/pompoko.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/pompoko_sec1.jpg",
+        "./assets/img/pompoko_sec2.jpg",
+        "./assets/img/pompoko_sec3.jpg",
+        "./assets/img/pompoko_sec4.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Sussurros do Coração",
+      "conteudo": "Uma jovem estudante amante de livros descobre que todos os livros que ela pega na biblioteca foram previamente emprestados pelo mesmo garoto, levando-a a uma jornada de autodescoberta.",
+      "categoria": "Drama, Romance",
+      "autor": "Yoshifumi Kondō",
+      "data": "15-07-1995",
+      "imagem": "./assets/img/sussurrosdocoracao.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/sussurros_sec1.jpg",
+        "./assets/img/sussurros_sec2.jpg",
+        "./assets/img/sussurros_sec3.jpg",
+        "./assets/img/sussurros_sec4.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Princesa Mononoke",
+      "conteudo": "Ashitaka, um príncipe Emishi, é amaldiçoado após defender sua aldeia de um demônio. Ele viaja para o oeste em busca de uma cura e se encontra no meio de um conflito entre os espíritos da floresta e os humanos que estão destruindo seus recursos. Lá, ele conhece San, a Princesa Mononoke, uma garota criada por lobos que luta para proteger a floresta.",
+      "categoria": "Fantasia, Aventura, Drama",
+      "autor": "Hayao Miyazaki",
+      "data": "12-07-1997",
+      "imagem": "./assets/img/princesamononoke.jpg",
+      "imagemCarrossel": "./assets/img/princesamononoke_carrossel.jpg",
+      "destaque": true,
+      "descricaoCurta": "Uma aventura épica que mistura ação, natureza e espiritualidade, explorando o conflito entre humanidade e meio ambiente.",
+      "fotosSecundarias": [
+        "./assets/img/mononoke_sec1.jpg",
+        "./assets/img/mononoke_sec2.jpg",
+        "./assets/img/mononoke_sec3.jpg",
+        "./assets/img/mononoke_sec4.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Meus Vizinhos os Yamadas",
+      "conteudo": "Acompanhamos o dia a dia divertido e caótico de uma família japonesa comum. Por meio de pequenas histórias, o filme mostra situações familiares cheias de humor, amor e desafios cotidianos.",
+      "categoria": "Comédia, Slice of Life",
+      "autor": "Isao Takahata",
+      "data": "17-07-1999",
+      "imagem": "./assets/img/meusvizinhoyamada.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/yamadas_sec1.jpg",
+        "./assets/img/yamadas_sec2.jpg",
+        "./assets/img/yamadas_sec3.jpg",
+        "./assets/img/yamadas_sec4.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "A Viagem de Chihiro",
+      "conteudo": "Chihiro e seus pais estão se mudando para uma nova cidade. No caminho, eles param em um túnel misterioso que os leva a um mundo mágico habitado por deuses, espíritos e criaturas fantásticas. Quando seus pais são transformados em porcos, Chihiro deve trabalhar em uma casa de banhos para espíritos, administrada pela bruxa Yubaba, para encontrar uma maneira de libertá-los e retornar ao seu mundo.",
+      "categoria": "Fantasia, Aventura",
+      "autor": "Hayao Miyazaki",
+      "data": "20-07-2001",
+      "imagem": "./assets/img/aviagemdechihiro.jpg",
+      "imagemCarrossel": "./assets/img/aviagemdechihiro_carrossel.jpg",
+      "destaque": true,
+      "descricaoCurta": "Uma jornada mágica de autodescoberta e coragem em um mundo fantástico.",
+      "fotosSecundarias": [
+        "./assets/img/chihiro_sec1.jpg",
+        "./assets/img/chihiro_sec2.jpg",
+        "./assets/img/chihiro_sec3.jpg",
+        "./assets/img/chihiro_sec4.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "O Reino dos Gatos",
+      "conteudo": "Uma estudante salva um gato de ser atropelado e descobre que ele é um príncipe do Reino dos Gatos. Como recompensa, ela é levada para o seu mundo e prometida em casamento a ele.",
+      "categoria": "Fantasia, Aventura",
+      "autor": "Hiroyuki Morita",
+      "data": "19-07-2002",
+      "imagem": "./assets/img/oreinodosgatos.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/gatos_sec1.jpg",
+        "./assets/img/gatos_sec2.jpg",
+        "./assets/img/gatos_sec3.jpg",
+        "./assets/img/gatos_sec4.jpg"
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "O Castelo Animado",
+      "conteudo": "Sophie, uma jovem chapeleira, é amaldiçoada por uma bruxa e transformada em uma velha. Ela foge de casa e encontra refúgio no castelo ambulante do misterioso mago Howl. Lá, ela faz um pacto com um demônio do fogo chamado Calcifer e embarca em uma aventura para quebrar sua maldição e a de Howl.",
+      "categoria": "Fantasia, Aventura",
+      "autor": "Hayao Miyazaki",
+      "data": "20-11-2004",
+      "imagem": "./assets/img/ocasteloanimado.jpg",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/ocasteloanimado_sec1.jpg",
+        "./assets/img/ocasteloanimado_sec2.jpg",
+        "./assets/img/ocasteloanimado_sec3.jpg",
+        "./assets/img/ocasteloanimado_sec4.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Contos de Terramar",
+      "conteudo": "Em um mundo desequilibrado, um arquimago e um príncipe exilado se unem para encontrar a fonte do mal que assola a terra de Terramar.",
+      "categoria": "Fantasia, Aventura",
+      "autor": "Gorō Miyazaki",
+      "data": "29-07-2006",
+      "imagem": "./assets/img/contosdeterramar.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/terramar_sec1.jpg",
+        "./assets/img/terramar_sec2.jpg",
+        "./assets/img/terramar_sec3.jpg",
+        "./assets/img/terramar_sec4.jpg"
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Ponyo",
+      "conteudo": "Brunhilde, uma peixinha dourada, foge de sua casa no oceano e é resgatada por um menino de cinco anos chamado Sosuke, que a nomeia Ponyo. Ponyo deseja se tornar humana e, com a ajuda de seus poderes mágicos, ela consegue. No entanto, sua transformação causa um desequilíbrio na natureza, e Sosuke e Ponyo devem trabalhar juntos para restaurar a ordem.",
+      "categoria": "Fantasia, Aventura",
+      "autor": "Hayao Miyazaki",
+      "data": "19-07-2008",
+      "imagem": "./assets/img/ponyo.png",
+      "imagemCarrossel": "./assets/img/ponyo_carrossel.jpg",
+      "destaque": true,
+      "descricaoCurta": "Uma aventura mágica e divertida sobre coragem, amizade e o poder da imaginação.",
+      "fotosSecundarias": [
+        "./assets/img/ponyo_sec1.jpg",
+        "./assets/img/ponyo_sec2.jpg",
+        "./assets/img/ponyo_sec3.jpg",
+        "./assets/img/ponyo_sec4.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "O Mundo dos Pequeninos",
+      "conteudo": "Uma família de seres minúsculos que vivem secretamente nas paredes e assoalhos de uma casa precisa manter sua existência em segredo dos humanos.",
+      "categoria": "Fantasia, Drama",
+      "autor": "Hiromasa Yonebayashi",
+      "data": "17-07-2010",
+      "imagem": "./assets/img/omundodospequeninos.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/pequeninos_sec1.jpg",
+        "./assets/img/pequeninos_sec2.jpg",
+        "./assets/img/pequeninos_sec3.jpg",
+        "./assets/img/pequeninos_sec4.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "Da Colina Kokuriko",
+      "conteudo": "Dois estudantes se unem para salvar o antigo prédio do clube de sua escola da demolição nos anos 60, enquanto descobrem uma conexão surpreendente em seus passados.",
+      "categoria": "Drama, Romance",
+      "autor": "Gorō Miyazaki",
+      "data": "16-07-2011",
+      "imagem": "./assets/img/dacolinakokuriko.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/kokuriko_sec1.jpg",
+        "./assets/img/kokuriko_sec2.jpg",
+        "./assets/img/kokuriko_sec3.jpg",
+        "./assets/img/kokuriko_sec4.jpg"
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Vidas ao Vento",
+      "conteudo": "Uma biografia ficcional de Jiro Horikoshi, o designer do avião de caça Mitsubishi A6M Zero, que sonhava em projetar belos aviões.",
+      "categoria": "Drama, Biografia",
+      "autor": "Hayao Miyazaki",
+      "data": "20-07-2013",
+      "imagem": "./assets/img/vidasaovento.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/vidasaovento_sec1.jpg",
+        "./assets/img/vidasaovento_sec2.jpg",
+        "./assets/img/vidasaovento_sec3.jpg",
+        "./assets/img/vidasaovento_sec4.jpg"
+      ]
+    },
+    {
+      "id": 21,
+      "titulo": "O Conto da Princesa Kaguya",
+      "conteudo": "Encontrada dentro de um talo de bambu, uma menina cresce rapidamente e se torna uma jovem de beleza exuberante, mas seu destino misterioso a chama de volta para a Lua.",
+      "categoria": "Fantasia, Drama",
+      "autor": "Isao Takahata",
+      "data": "23-11-2013",
+      "imagem": "./assets/img/kaguya.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/kaguya_sec1.jpg",
+        "./assets/img/kaguya_sec2.jpg",
+        "./assets/img/kaguya_sec3.jpg",
+        "./assets/img/kaguya_sec4.jpg"
+      ]
+    },
+    {
+      "id": 22,
+      "titulo": "As Memórias de Marnie",
+      "conteudo": "Uma garota solitária e adotada é enviada para o interior e desenvolve uma amizade misteriosa com Marnie, uma garota que vive em uma mansão aparentemente abandonada.",
+      "categoria": "Drama, Mistério",
+      "autor": "Hiromasa Yonebayashi",
+      "data": "19-07-2014",
+      "imagem": "./assets/img/marnie.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/marnie_sec1.jpg",
+        "./assets/img/marnie_sec2.jpg",
+        "./assets/img/marnie_sec3.jpg",
+        "./assets/img/marnie_sec4.jpg"
+      ]
+    },
+    {
+      "id": 23,
+      "titulo": "Aya e a Bruxa",
+      "conteudo": "Uma órfã obstinada é adotada por uma bruxa egoísta e descobre um mundo de feitiços e poções, tentando controlar seu próprio destino.",
+      "categoria": "Fantasia, Comédia",
+      "autor": "Gorō Miyazaki",
+      "data": "30-12-2020",
+      "imagem": "./assets/img/ayaeabruxa.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/aya_sec1.jpg",
+        "./assets/img/aya_sec2.jpg",
+        "./assets/img/aya_sec3.jpg",
+        "./assets/img/aya_sec4.jpg"
+      ]
+    },
+    {
+      "id": 24,
+      "titulo": "O Menino e a Garça",
+      "conteudo": "Após a morte de sua mãe, um menino se muda para o campo e descobre uma torre abandonada que o leva a um mundo fantástico com uma garça falante.",
+      "categoria": "Fantasia, Aventura",
+      "autor": "Hayao Miyazaki",
+      "data": "14-07-2023",
+      "imagem": "./assets/img/omeninoeagarca.png",
+      "imagemCarrossel": "",
+      "destaque": false,
+      "descricaoCurta": "",
+      "fotosSecundarias": [
+        "./assets/img/garça_sec1.jpg",
+        "./assets/img/garça_sec2.jpg",
+        "./assets/img/garça_sec3.jpg",
+        "./assets/img/garça_sec4.jpg"
+      ]
     }
   ]
 }
