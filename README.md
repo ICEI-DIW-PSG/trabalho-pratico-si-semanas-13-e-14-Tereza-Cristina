@@ -9,14 +9,14 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Tereza Cristina Rodrigues Silva
+- Matricula: 900751
+- Proposta de projeto escolhida: Pessoas e Produções
+- Breve descrição sobre seu projeto: O meu projeto é um site de resumo dos filmes do Studio Ghibli, onde vai mostrar todos os filmes lançados.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Implementei a página 'Sobre', que apresenta informações gerais do site e inclui um gráfico mostrando a porcentagem de cada gênero de filme presente no catálogo.
 
 ![Print Grafico antes](./public/assets/img/Testes/Grafico1.png)
 
