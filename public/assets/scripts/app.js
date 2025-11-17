@@ -450,9 +450,145 @@ function adicionarBotaoCriarFilme() {
 document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('detalhe-container')) {
     carregarDetalhesPage();
-  } else {
+  } else if (document.getElementById('generoChart')) {
+    carregarPaginaSobre();
+  } else if (document.getElementById('filmes-container')) { // Verifica se é a página inicial
     carregarHomePage();
     ativarPesquisa();
     adicionarBotaoCriarFilme();
   }
 });
+// ====================================================================
+// READ (GET) - Carregar Página Sobre com Gráfico
+// ====================================================================
+async function carregarPaginaSobre() {
+  const generoChartCanvas = document.getElementById('generoChart');
+  
+  if (!generoChartCanvas) return;
+
+  try {
+    const response = await fetch(API_URL);
+    if (!response.ok) {
+      throw new Error(`Erro ao buscar dados: ${response.statusText}`);
+    }
+    const filmes = await response.json();
+
+    // Processar os gêneros dos filmes
+    const generosContagem = {};
+    
+    filmes.forEach(filme => {
+      // A categoria pode conter múltiplos gêneros separados por vírgula
+      const generos = filme.categoria.split(',').map(g => g.trim());
+      
+      generos.forEach(genero => {
+        // Remove pontos finais que possam existir
+        const generoLimpo = genero.replace(/\.$/, '').trim();
+        
+        if (generoLimpo) {
+          if (generosContagem[generoLimpo]) {
+            generosContagem[generoLimpo]++;
+          } else {
+            generosContagem[generoLimpo] = 1;
+          }
+        }
+      });
+    });
+
+    // Preparar dados para o gráfico
+    const labels = Object.keys(generosContagem);
+    const dados = Object.values(generosContagem);
+
+    // Cores para o gráfico (paleta harmoniosa inspirada no Studio Ghibli)
+    const coresBackground = [
+      'rgba(175, 4, 41, 0.7)',      // Vermelho rosado (cor do navbar)
+      'rgba(107, 142, 35, 0.7)',    // Verde musgo
+      'rgba(255, 182, 193, 0.7)',   // Rosa claro
+      'rgba(135, 206, 235, 0.7)',   // Azul céu
+      'rgba(255, 218, 185, 0.7)',   // Pêssego
+      'rgba(221, 160, 221, 0.7)',   // Lavanda
+      'rgba(240, 230, 140, 0.7)',   // Amarelo suave
+      'rgba(176, 224, 230, 0.7)',   // Azul powder
+      'rgba(255, 160, 122, 0.7)',   // Salmão claro
+      'rgba(152, 251, 152, 0.7)',   // Verde pálido
+      'rgba(255, 228, 196, 0.7)',   // Bisque
+      'rgba(230, 230, 250, 0.7)',   // Lavanda claro
+    ];
+
+    const coresBorda = [
+      'rgba(175, 4, 41, 1)',
+      'rgba(107, 142, 35, 1)',
+      'rgba(255, 182, 193, 1)',
+      'rgba(135, 206, 235, 1)',
+      'rgba(255, 218, 185, 1)',
+      'rgba(221, 160, 221, 1)',
+      'rgba(240, 230, 140, 1)',
+      'rgba(176, 224, 230, 1)',
+      'rgba(255, 160, 122, 1)',
+      'rgba(152, 251, 152, 1)',
+      'rgba(255, 228, 196, 1)',
+      'rgba(230, 230, 250, 1)',
+    ];
+
+    // Criar o gráfico
+    const ctx = generoChartCanvas.getContext('2d');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Quantidade de Filmes',
+          data: dados,
+          backgroundColor: coresBackground,
+          borderColor: coresBorda,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              padding: 15,
+              font: {
+                size: 12
+              }
+            }
+          },
+          title: {
+            display: true,
+            text: 'Distribuição de Filmes do Studio Ghibli por Gênero',
+            font: {
+              size: 16,
+              weight: 'bold'
+            },
+            padding: {
+              top: 10,
+              bottom: 20
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const label = context.label || '';
+                const value = context.parsed || 0;
+                const total = context.dataset.data.reduce((acc, val) => acc + val, 0);
+                const percentage = ((value / total) * 100).toFixed(1);
+                return `${label}: ${value} filme${value > 1 ? 's' : ''} (${percentage}%)`;
+              }
+            }
+          }
+        }
+      }
+    });
+
+  } catch (error) {
+    console.error('Erro ao carregar gráfico de gêneros:', error);
+    const canvas = document.getElementById('generoChart');
+    if (canvas) {
+      const container = canvas.parentElement;
+      container.innerHTML = '<p class="alert alert-danger text-center">Não foi possível carregar o gráfico. Verifique se o servidor está rodando.</p>';
+    }
+  }
+}

@@ -29,3 +29,15 @@ footer {
   padding: 15px 0;
 }
 
+.btn-moss {
+  background-color: #6b8e23;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-moss:hover {
+  background-color: #556b2f;
+  color: white;
+}
+
